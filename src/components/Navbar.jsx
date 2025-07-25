@@ -12,7 +12,7 @@ const Navbar = ({ active, setActive }) => {
     <>
       <nav className="flex justify-between py-5 px-10">
         <div className="flex gap-x-8 items-center">
-          <img src="/logo.svg" alt="" />
+          <img src="/logo.svg" alt="logo" />
           {navigations.map((nav) => (
             <div key={nav.id} className="sm:flex flex-col group hidden">
               <div className="flex" onClick={() => handleClick(nav.text)}>
@@ -30,6 +30,7 @@ const Navbar = ({ active, setActive }) => {
                         ? "/icon-arrow-up.svg"
                         : "/icon-arrow-down.svg"
                     }
+                    alt=""
                   />
                 )}
               </div>
@@ -94,6 +95,7 @@ const Navbar = ({ active, setActive }) => {
                           ? "/icon-arrow-up.svg"
                           : "/icon-arrow-down.svg"
                       }
+                      alt=""
                     />
                   ) : (
                     ""
