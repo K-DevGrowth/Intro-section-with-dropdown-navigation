@@ -28,10 +28,12 @@ const Hero = () => {
         <img
           className="sm:block max-w-full hidden"
           src="/image-hero-desktop.png"
+          alt=""
         />
         <img
           className="sm:hidden block max-w-full"
           src="/image-hero-mobile.png"
+          alt=""
         />
       </div>
     </main>
